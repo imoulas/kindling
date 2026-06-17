@@ -4,8 +4,6 @@
 [![Doc](https://img.shields.io/badge/docs-latest-green.svg)](http://kindling.harmonycloud.cn/docs/overview-and-concepts/overview/) 
 [![Go Report Card](https://goreportcard.com/badge/github.com/KindlingProject/kindling/collector)](https://goreportcard.com/report/github.com/KindlingProject/kindling/collector)
 
-Visit our [Kindling website](http://kindling.harmonycloud.cn/) for more information.
-
 ## What is Kindling
 
 Kindling is an eBPF-based cloud native monitoring tool, which aims to help users understand the app behavior from kernel to code stack. With **trace profiling**, we hope the user can understand the application's behavior easily and find the root cause in seconds. Besides trace profiling, Kindling provides an easy way to get an overview of network flows in the Kubernetes environment, and many built-in network monitor dashboards like TCP retransmit, DNS, throughput, and TPS. Not only as a network monitor, but Kindling is also trying to analyze one detail RPC call and get the following information, which can be found in network explore in chrome. And the usage is the same as network exploration in chrome, with which users can tell which part to dig into to find the root cause of the problem in the production environment.
@@ -69,27 +67,7 @@ The next image shows a dependency map in Kubernetes.
 
 Kindling can be easily integrated with Prometheus, and we uses PromQL to query the data in the frontend, so it should be adopted easily. But due to the cardinality constraint of Prometheus, we group the detailed data into buckets which throw away the detailed information.
 
-## Get started
 
-You can deploy Kindling easily, check out the [Installation Guide](http://kindling.harmonycloud.cn/docs/installation/kindling-agent/requirements/) for details.
-
-## Documentation
-
-The Kindling documentation is available on our [Kindling website](http://kindling.harmonycloud.cn/docs/overview-and-concepts/overview/)
-
-## Contributing 
-
-Contributions are welcome, you can contribute in many ways: report issues, help us reproduce issues, fix bugs, add features, give us advice on GitHub discussion, and so on. If you are interested in joining us to unveil the eBPF in the Kubernetes area, you can start by reading the [Contributing Guide](https://github.com/KindlingProject/kindling/blob/main/CONTRIBUTING.md).
-
-## Contact
-
-If you have questions or ideas, please feel free to reach out to us in the following ways:
-
-- Check out the [discussions](https://github.com/KindlingProject/kindling/discussions)
-- Join the Kindling [Slack channel](https://join.slack.com/t/kindling-world/shared_invite/zt-1rmki34l0-JiFpWFR7YhqlXG~mSQQAtg)
-- Join the WeChat Group (in Chinese)
-
-![img](/docs/imgs/wechat-code.png)
 
 ## License
 
